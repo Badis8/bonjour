@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='send.css')}}">
+    <title>Add face</title>
+</head>
+<body>
+    <div class="container">
+
+    <form method=post enctype=multipart/form-data>
+        <div class="title"><p>Name of the person:</p></div>
+        <div class="name">
+        
+        <input type="text" name="name">
+        </div>
+        <br>
+        <br>
+      <br>
+      
+       
+        <div class="image" id="fileimage" id="fileinput2"> <p>select an image</p>
+        <input type=file class="file_input" name=file id="fileinput2"/>
+       
+        </div>
+         
+       
+      <br>
+        <div class="submition"> 
+        <input type=submit value=Upload>
+    </div>
+      </form>
+      <br>
+      <br>
+      <br>
+  
+    </div>
+    <script>
+        document.getElementById("fileimage").onclick=function() {myfunction()};
+        function myfunction(){
+          
+           document.getElementById("fileinput2").click(); 
+        }
+   
+    </script>
+     </div>
+    <div class="slider"> 
+      <div class="slide">
+      <div class="slide1">
+         </div>
+      <div class="slide2">
+        test
+      </div>
+      <div class="slide3">
+        bro
+      </div>
+      <div class="slide4">
+        real qiocl
+      </div>
+      </div>
+      </div>
+</body>
+</html>
